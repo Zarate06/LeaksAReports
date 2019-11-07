@@ -79,3 +79,6 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::get('descargar-entrenadores','TrainerController@pdf')->name('listado.pdf');
 Route::get('pdfview/{id}','TrainerController@pdf2');
+
+Route::get('create-category', 'CategoryController@create');
+Route::post('create-category', 'CategoryController@store');
