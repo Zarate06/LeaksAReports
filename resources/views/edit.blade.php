@@ -2,9 +2,7 @@
 @section('title', 'trainers')
 @section('content')
 
-
-{!!Form::model($trainer,['route'=>['trainers.update',$trainer],
-'method'=>'PUT','files'=>true])!!}
+{!!Form::model($trainer,['route'=>['trainers.update',$trainer],'method'=>'PUT','files'=>true])!!}
 @include('form')
 <!--<div class="form-group">
 {{Form::label('name','Nombre')}}
