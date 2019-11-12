@@ -44,7 +44,7 @@ class TrainerController extends Controller
      */
     public function create()
     {
-        return view('guardado');
+        return view('create');
     }
 
     /**
